@@ -1,0 +1,267 @@
+/*
+All rights reserved Zimit Media (C) 2016
+Written by Angel Angeles III
+*/
+
+
+/* INITIALIZE */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans+Condensed:300|Raleway:100,200,300,400,700');
+
+html {
+	font-family: "Raleway", "Helvetica", "Tahoma", sans-serif;
+}
+
+.wrapper {
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0;
+	width: 100%;
+	padding: 0 20px;
+	position: relative;
+}
+
+.front-page-section {
+	padding: 40px 0;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.center-align {
+	text-align: center;
+}
+
+img.scroll-indicate-mid {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	margin: 0 auto;
+	height: 60px;
+}
+
+img.scroll-indicate-left {
+	display: block;
+	position: absolute;
+	left: 40px;
+	bottom: 20px;
+	margin: 0 auto;
+	height: 60px;
+}
+
+
+img.scroll-indicate-right {
+	display: block;
+	position: absolute;
+	right: 40px;
+	bottom: 20px;
+	margin: 0 auto;
+	height: 60px;
+}
+
+
+/*TEXT*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+p {
+	color: #424242;
+}
+
+/*COLORS*/
+
+.main-red {
+	background-color: #F45B69;
+}
+
+.main-blue {
+	background-color: #4062BB;
+}
+
+.main-sea {
+	background-color: #59C3C3;
+}
+
+.main-purple {
+	background-color: #52489C;
+}
+
+.main-grey {
+	background-color: #EBEBEB;
+}
+
+.main-red-text {
+	color: #F45B69;
+}
+
+.main-blue-text {
+	color: #4062BB;
+}
+
+.main-sea-text {
+	color: #59C3C3;
+}
+
+.main-purple-text {
+	color: #52489C;
+}
+
+.main-grey-text {
+	color: #EBEBEB;
+}
+
+/*BUTTONS*/
+
+a.big-btn {
+	display: inline-block;
+	padding: 15px 30px;
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 0 auto;
+	font-family: 'Raleway';
+	letter-spacing: 2px;
+	font-size: 1.2em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* HEADER CSS */
+header {
+	background: url('../img/headerbg.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	color: #FFF;
+	padding-top: 130px;
+}
+
+header .container {
+	padding: 0 40px;
+}
+
+header nav#header-nav {
+	padding: 30px 40px;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255,255,255,0);
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+header nav#header-nav.scrolled {
+	background: rgba(255,255,255,1);
+	color: #4062BB !important;
+}
+
+header nav#header-nav.scrolled a {
+	color: #4062BB !important;
+}
+
+header nav#header-nav img.nav-logo {
+	max-height: 40px;
+	position: absolute;
+	top: 20px;
+}
+
+header nav#header-nav img.nav-logo-hide {
+	opacity: 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	
+}
+
+header nav#header-nav img.nav-logo-show {
+	opacity: 1 !important;
+}
+
+header nav#header-nav ul.menu-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+header nav#header-nav ul.menu-list li {
+	display: inline-block;
+	margin: 0;
+}
+
+header nav#header-nav ul.menu-list li a:link,
+header nav#header-nav ul.menu-list li a:visited {
+	color: #FFF;
+	text-decoration: none;
+	padding: 5px 15px;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .1em;
+}
+
+header h1.headerphrase {
+	font-family: 'Montserrat';
+	font-size: 90pt;
+	color: #FFF;
+	line-height: 0.9em;
+	margin: 0;
+}
+
+header p.headerdescription {
+	margin-top: 40px;
+	font-size: 24pt;
+	line-height: 1.5em;
+	max-width: 800px;
+	padding: 0;
+	color: #FFF;
+}
+
+.team-profile {
+	text-align: center;
+}
+
+.team-profile .porthole {
+	margin: 0 auto;
+	height: 150px;
+	width: 150px;
+	border-radius: 100%;
+	background: #AAE1E8;
+}

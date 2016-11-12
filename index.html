@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-PH">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" description="Zimit Media Team">
+	<meta charset="UTF-8">
+
+	<title>Zimit Media Philippines</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<header style="position: relative;">
+		<div class="container">
+			<!-- NAV -->
+			<nav class="row" id="header-nav">
+				<div class="large-6 columns">
+					<img src="img/logo/banner1_white.png" alt="Zimit Media" class="nav-logo">
+					<img src="img/logo/banner1.png" alt="Zimit Media" class="nav-logo nav-logo-hide">
+				</div>
+				<div class="large-6 columns right-align">
+					<ul class="menu-list">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Philippines</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+			<!-- Catchphrase -->
+			<h1 class="headerphrase">Design<br/><span id="x-sign" style="line-height: 0.5em; color: #ffc600;">&#215;</span><br/>Performance</h1>
+			<div class="row">
+				<div class="large-8 end columns">
+					<p class="headerdescription">We are a Manila-based web development team who are obsessed at creating aesthetically pleasing designs that produces stunning results.</p>
+					<a href="#" class="big-btn main-red">Inquire Now</a>
+				</div>
+			</div>
+		</div>
+		<a href="#section1" class="scroll" data-scroll><img src="img/scrolldown.gif" alt="Scroll Down" title="Scroll down for more" class="scroll-indicate-right"></a>
+	</header>
+	<section class="main-grey front-page-section" id="section1">
+		<div class="container">
+			<div class="row">
+				<div class="small-12 columns">
+					<h1 class="main-red-text" style="font-weight: 300;">Efficiency Meets<br/>Affodability</h1>
+					<p style="max-width: 960px; line-height: 1.5em; font-size: 1.5em">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore autem velit, deleniti totam aperiam a, natus error hic optio, consequatur quam ducimus. Culpa optio amet accusamus inventore impedit similique eveniet sunt corporis at harum, unde voluptate, ad tenetur delectus voluptas, dicta non provident voluptatibus nesciunt a. Nisi assumenda a aut.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="front-page-section">
+		<div class="wrapper">
+			<h1 class="center-align">Meet the Team</h1>
+			<div class="row team-profile">
+				<div class="large-4 small-12 columns individual-profile">
+					<div class="porthole">&nbsp;</div>
+					<h3>Angel Angeles</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates mollitia, nostrum distinctio in voluptate earum!</p>
+				</div>
+				<div class="large-4 small-12 columns individual-profile">
+					<div class="porthole">&nbsp;</div>
+					<h3>Almer Almazan</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur maiores, quidem. Quidem, debitis odit! Vitae?</p>
+				</div>
+				<div class="large-4 small-12 columns individual-profile">
+					<div class="porthole">&nbsp;</div>
+					<h3>Jenary Madia</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eum rerum consequuntur minus eligendi reiciendis.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="page-footer">
+		<!-- Jquery -->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="js/jquery.smooth-scroll.min.js"></script>
+		<script src="js/smooth-scroll.js"></script>
+		
+		<!-- INIT -->
+		<script>
+			function navbarTransition() {
+				var scroll_top = $(window).scrollTop();
+				var offset_val = 90;
+				if (scroll_top >= offset_val) {
+					$('nav#header-nav img.nav-logo-hide').addClass('nav-logo-show');
+					$('nav#header-nav').addClass('scrolled');
+				} else {
+					$('nav#header-nav img.nav-logo-hide').removeClass('nav-logo-show');
+					$('nav#header-nav').removeClass('scrolled');
+				}
+			}
+
+			$(document).ready(function(e){
+				// Fixed Navbar Scripts
+
+				$(window).scroll(navbarTransition);
+
+
+				smoothScroll.init({
+					speed: 1000,
+					easing: 'easeInOutCubic',
+					offset: 79
+				});
+			});
+		</script>
+
+	</footer>
+
+</body>
+</html>
