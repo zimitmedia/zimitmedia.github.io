@@ -10,10 +10,22 @@ Written by Angel Angeles III
 
 html {
 	font-family: "Raleway", "Helvetica", "Tahoma", sans-serif;
+	background: #F3F3F3;
 }
 
 .wrapper {
-	max-width: 960px;
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.big-wrapper {
+	max-width: 1440px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -157,9 +169,17 @@ header {
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
+	min-height: 500px;
 	width: 100%;
 	color: #FFF;
 	padding-top: 130px;
+	padding-bottom: 5px;
+	-webkit-transition: height 0.5s linear;
+	-moz-transition: height 0.5s linear;
+	-ms-transition: height 0.5s linear;
+	-o-transition: height 0.5s linear;
+	transition: height 0.5s linear;
+	
 }
 
 header .container {
@@ -184,11 +204,11 @@ header nav#header-nav {
 
 header nav#header-nav.scrolled {
 	background: rgba(255,255,255,1);
-	color: #4062BB !important;
+	color: #4D4D4D !important;
 }
 
 header nav#header-nav.scrolled a {
-	color: #4062BB !important;
+	color: #4D4D4D !important;
 }
 
 header nav#header-nav img.nav-logo {
@@ -209,6 +229,15 @@ header nav#header-nav img.nav-logo-hide {
 
 header nav#header-nav img.nav-logo-show {
 	opacity: 1 !important;
+}
+
+header nav#header-nav a.menu-icon {
+	color: #FFF;
+}
+
+header nav#header-nav a.menu-icon .material-icons {
+	/*color: #FFF;*/
+	font-size: 24pt;
 }
 
 header nav#header-nav ul.menu-list {
@@ -243,6 +272,7 @@ header h1.headerphrase {
 	color: #FFF;
 	line-height: 0.9em;
 	margin: 0;
+	padding: 0 15px;
 }
 
 header p.headerdescription {
@@ -253,6 +283,9 @@ header p.headerdescription {
 	padding: 0;
 	color: #FFF;
 }
+
+
+/*SECTIONS*/
 
 .team-profile {
 	text-align: center;
@@ -265,3 +298,108 @@ header p.headerdescription {
 	border-radius: 100%;
 	background: #AAE1E8;
 }
+
+
+/*processes*/
+.processes {
+	padding: 0 !important;
+}
+
+.processes .process-box {
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	height: 100em;
+	max-height: 600px;
+	background-size: cover !important;
+	background-position: center center !important;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.processes .process-box:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+
+.processes .columns {
+	padding: 0 !important;
+}
+
+.processes .darken {
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	
+}
+
+.processes .darken:hover {
+	background: rgba(0,0,0,0);
+}
+
+/*FOOTER*/
+footer .footer-container {
+	padding: 15px;
+	background: #161616;
+	color: #D0D0D0;
+	letter-spacing: 0.05em;
+}
+
+footer img.footer-logo {
+	display: block;
+	float: right;
+	max-height: 15px;
+}
+
+
+/*BREAKPOINTS*/
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+	.container {
+		padding: 0 10px;
+	}
+	a.big-btn {
+		padding: 10px 20px;
+		font-size: 0.8em;
+	}
+
+	header .container {
+		padding: 0 10px;
+	}
+
+	header h1.headerphrase {
+		font-size: 27pt;
+		padding: 0 15px;
+	}
+	header p.headerdescription {
+		font-size: 14pt;
+	}
+	header nav#header-nav {
+		padding: 10px 10px !important;
+	}
+	header nav#header-nav img.nav-logo {
+		max-height: 24px;
+		top: 15px;
+	}
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	header h1.headerphrase {
+		font-size: 65pt;
+	}
+	header nav#header-nav {
+		padding: 20px 10px !important;
+	}
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
