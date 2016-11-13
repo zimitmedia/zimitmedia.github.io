@@ -7,6 +7,7 @@ Written by Angel Angeles III
 /* INITIALIZE */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans+Condensed:300|Raleway:100,200,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 html {
 	font-family: "Raleway", "Helvetica", "Tahoma", sans-serif;
@@ -332,13 +333,84 @@ header p.headerdescription {
 	color: #FFF;
 }
 
+/*Vertical Line Decorations*/
+.line-container {
+	position: absolute;
+	left: 50%;
+    transform: translate(-50%, 0);
+    width: 80px;
+}
+.line-container .box1,
+.line-container .box2 {
+	width: 50%;
+	height: 100%;
+}
+.line-container .box1:after,
+.line-container .box2:after {
+	content: '\00a0';
+}
+#header-line {
+	/*background: #F000FF;*/
+	bottom: 0;
+	height: 100px;
+}
+#header-line .box1 {
+	border-right: 1px dashed #FFFFFF;
+}
+#section1-line1 {
+	top: 0;
+	height: 80px;
+	border-bottom: 2px solid #9E9E9E;
+}
+#section1-line1 .box1 {
+	border-right: 1px dashed #9E9E9E;
+}
+#section1-line2 {
+	bottom: 0;
+	height: 80px;
+	border-top: 2px solid #9E9E9E;
+}
+#section1-line2 .box1 {
+	border-right: 1px dashed #9E9E9E;
+}
+
 
 /*SECTIONS*/
 
+/*section1*/
+#section1 {
+	padding: 150px 0;
+	position: relative;
+}
+#section1 h2.banner {
+	color: #F45B69;
+	font-size: 4.5em;
+	font-family: 'Permanent Marker', sans-serif;
+	position: absolute;
+	top: -50px;
+	
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	display: block;
+	margin: 0 auto;
+}
+#section1 h3.tagline {
+	margin: 0;
+	color: #F45B69;
+	font-size: 4em;
+	font-family: 'Montserrat', sans-serif
+}
+#section1 p {
+	margin: 0 0 20px;
+	font-size: 2em;
+	line-height: 1.5em;
+	/*letter-spacing: 0.05em;*/
+}
+
+
+/*team-profile*/
 .team-profile {
 	text-align: center;
 }
-
 .team-profile .porthole {
 	margin: 0 auto;
 	height: 150px;
@@ -352,7 +424,6 @@ header p.headerdescription {
 .processes {
 	padding: 0 !important;
 }
-
 .processes .process-box {
 	filter: grayscale(1);
 	-webkit-filter: grayscale(1);
@@ -370,11 +441,9 @@ header p.headerdescription {
 	filter: grayscale(0);
 	-webkit-filter: grayscale(0);
 }
-
 .processes .columns {
 	padding: 0 !important;
 }
-
 .processes .darken {
 	height: 100%;
 	background: rgba(0,0,0,0.5);
@@ -385,7 +454,6 @@ header p.headerdescription {
 	transition: all 0.5s ease;
 	
 }
-
 .processes .darken:hover {
 	background: rgba(0,0,0,0);
 }
