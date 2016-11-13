@@ -22,4 +22,14 @@ $(document).ready(function(e){
 		easing: 'easeInOutCubic',
 		offset: 79
 	});
+
+	// Typed.js animations for the splash section
+	$('header #typed').typed({
+		stringsElement: $('#typed-strings'),
+		loop: true,
+		typeSpeed: 20,
+		backDelay: 3000,
+		backSpeed: 10
+	});
+
 });
