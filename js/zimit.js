@@ -31,6 +31,13 @@ $(document).ready(function(e){
 		}
 	});
 
+	$('header .menu-list-mobile li a').click(function(){
+		$('header .menu-list-mobile').removeClass('activated');
+		$('header .menu-icon .material-icons').text('menu');
+		$('nav#header-nav').removeClass('menu-activated');
+		$('nav#header-nav img.nav-logo-hide').removeClass('nav-logo-show-mobile');
+	});
+
 
 	// SmoothScrolling to Anchors
 	smoothScroll.init({
