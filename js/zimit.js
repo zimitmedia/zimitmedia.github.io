@@ -51,7 +51,7 @@ $(document).ready(function(e){
 		stringsElement: $('#typed-strings'),
 		loop: true,
 		typeSpeed: 20,
-		backDelay: 2500,
+		backDelay: 3000,
 		backSpeed: 10
 	});
 
