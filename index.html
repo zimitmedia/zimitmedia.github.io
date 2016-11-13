@@ -12,17 +12,17 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-	<header style="position: relative;">
+	<header style="position: relative;" class="site-header">
 		<div class="container">
 			<!-- NAV -->
 			<nav class="row" id="header-nav">
-				<div class="large-6 columns">
+				<div class="large-4 columns">
 					<a href="/">
 						<img src="img/logo/banner1_white.png" alt="Zimit Media" class="nav-logo">
 						<img src="img/logo/banner1.png" alt="Zimit Media" class="nav-logo nav-logo-hide">
 					</a>
 				</div>
-				<div class="large-6 columns right-align">
+				<div class="large-8 columns right-align">
 					<ul class="menu-list show-for-large">
 						<li><a href="#">Our Projects</a></li>
 						<li><a href="#">About Us</a></li>
@@ -73,14 +73,14 @@
 
 		<div class="wrapper">
 			<div class="row">
-				<div class="large-6 large-push-6 small-12 columns">
+				<div class="medium-6 medium-push-6 small-12 columns">
 					<h3 class="tagline">
 						Great Results<br/>Meets<br/>Affordability
 					</h3>
 				</div>
-				<div class="large-6 large-pull-6 small-12 columns">
+				<div class="medium-6 medium-pull-6 small-12 columns">
 					<p>
-						Every business in this era is moving to digital. Zimit Media is here to <b>help your organization transition from zero to hero</b> without the need for a big purse.
+						Every business in this era is moving to digital. Zimit Media is here to <b>help your organization transition from zero to hero, from planning to deployment</b> without the need for a big purse.
 					</p>
 				</div>
 			</div>
@@ -94,27 +94,46 @@
 
 	</section>
 
-	<section class="front-page-section processes">
-		<div class="row">
-			<div class="small-12 large-4 columns process-box" style="background: url('img/bg/planning.jpg')">
-				<div class="darken">
-					&nbsp;
+	<section class="front-page-section main-grey processes">
+
+		<!-- Vertical Line Drawing -->
+		<div class="line-container" id="processes-line">
+			<div class="box1"></div>
+			<div class="box2"></div>
+		</div>
+
+		<div class="big-wrapper">
+			<div class="row process-row">
+				<div class="medium-6 small-12 columns process-text planning-process">
+					<h3 class="main-red-text">Planning</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid veritatis blanditiis doloremque eaque deleniti dignissimos quis, qui voluptates pariatur ullam?</p>
+				</div>
+				<div class="medium-6 small-12 columns process-image planning-process">
+					<img src="img/bg/planning.jpg" alt="Planning">
 				</div>
 			</div>
-			<div class="small-12 large-4 columns process-box" style="background: url('img/bg/development.jpg')">
-				<div class="darken">
-					&nbsp;
+			<div class="row process-row">
+				<div class="medium-6 small-12 columns process-image development-process">
+					<img src="img/bg/development.jpg" alt="Planning">
+				</div>
+				<div class="medium-6 small-12 columns process-text development-process">
+					<h3 class="main-sea-text">Development and Testing</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, distinctio quam accusantium sit ad laudantium corporis architecto officiis!</p>
 				</div>
 			</div>
-			<div class="small-12 large-4 columns process-box" style="background: url('img/bg/deployment.jpg')">
-				<div class="darken">
-					&nbsp;
+			<div class="row process-row">
+				<div class="medium-6 small-12 columns process-text deployment-process">
+					<h3 class="main-blue-text">Deployment</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium labore neque nostrum, repellendus molestias ipsum libero magni assumenda deleniti doloremque similique quae ad!</p>
+				</div>
+				<div class="medium-6 small-12 columns process-image deployment-process">
+					<img src="img/bg/deployment.jpg" alt="Planning">
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="front-page-section">
+	<section class="front-page-section main-grey">
 		<div class="wrapper">
 			<h1 class="center-align">Meet the Team</h1>
 			<div class="row team-profile">
@@ -191,6 +210,7 @@
 	<script src="js/jquery.smooth-scroll.min.js"></script>
 	<script src="js/smooth-scroll.js"></script>
 	<script src="js/typed.js"></script>
+	<script src="js/stellar.min.js"></script>
 	
 	<!-- INIT -->
 	<script src="js/zimit.js"></script>

@@ -338,12 +338,21 @@ header p.headerdescription {
 	position: absolute;
 	left: 50%;
     transform: translate(-50%, 0);
-    width: 80px;
+    width: 60px;
+}
+.line-container .box1 {
+	float: left;
+}
+.line-container .box2 {
+	float: right;
 }
 .line-container .box1,
 .line-container .box2 {
 	width: 50%;
 	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .line-container .box1:after,
 .line-container .box2:after {
@@ -359,7 +368,7 @@ header p.headerdescription {
 }
 #section1-line1 {
 	top: 0;
-	height: 80px;
+	height: 100px;
 	border-bottom: 2px solid #9E9E9E;
 }
 #section1-line1 .box1 {
@@ -373,17 +382,27 @@ header p.headerdescription {
 #section1-line2 .box1 {
 	border-right: 1px dashed #9E9E9E;
 }
+#processes-line {
+	border-bottom: 2px solid #9E9E9E;
+	height: 100%;
+}
+#processes-line .box1 {
+	border-right: 1px dashed #9E9E9E;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 /*SECTIONS*/
 
 /*section1*/
 #section1 {
-	padding: 150px 0;
+	padding: 150px 0 100px;
 	position: relative;
 }
 #section1 h3.tagline {
 	margin: 0;
-	color: #F45B69;
+	color: #52489C;
 	font-size: 4em;
 	font-family: 'Montserrat', sans-serif
 }
@@ -391,6 +410,44 @@ header p.headerdescription {
 	margin: 0 0 20px;
 	font-size: 2em;
 	line-height: 1.5em;
+	text-align: right;
+}
+
+/*processes*/
+.processes {
+	padding: 0 0 100px !important;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.processes .process-row {
+	padding: 40px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.processes .process-text h3 {
+	font-size: 2.8em;
+	font-family: 'Montserrat', sans-serif;
+	margin: 20px 0 10px;
+}
+.processes .process-text p {
+	font-size: 1.8em;
+	line-height: 1.5em;
+}
+.processes .process-image {
+	padding: 0 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.processes .process-image img {
+	width: 100%;
+	display: block;
+}
+.processes .process-text.planning-process,
+.processes .process-text.deployment-process {
 	text-align: right;
 }
 
@@ -405,45 +462,6 @@ header p.headerdescription {
 	width: 150px;
 	border-radius: 100%;
 	background: #AAE1E8;
-}
-
-
-/*processes*/
-.processes {
-	padding: 0 !important;
-}
-.processes .process-box {
-	filter: grayscale(1);
-	-webkit-filter: grayscale(1);
-	height: 100em;
-	max-height: 600px;
-	background-size: cover !important;
-	background-position: center center !important;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
-.processes .process-box:hover {
-	filter: grayscale(0);
-	-webkit-filter: grayscale(0);
-}
-.processes .columns {
-	padding: 0 !important;
-}
-.processes .darken {
-	height: 100%;
-	background: rgba(0,0,0,0.5);
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	
-}
-.processes .darken:hover {
-	background: rgba(0,0,0,0);
 }
 
 /*Contact Us*/
@@ -601,9 +619,18 @@ footer img.footer-logo {
 		font-size: 1.2em;
 	}
 	/*end mobile menu*/
+	
+	/*Vertical Line Decorations*/
+	.line-container {
+		display: none;
+	}
 
 	/*SECTIONS*/
 	/*section1*/
+	#section1 {
+		padding: 40px 0 0;
+		position: relative;
+	}
 	#section1 h3.tagline {
 		margin: 0 0 20px;
 		color: #F45B69;
@@ -615,6 +642,60 @@ footer img.footer-logo {
 		font-size: 1.3em;
 		line-height: 1.5em;
 		text-align: left;
+	}
+	/*processes*/
+	.processes {
+		padding: 0 !important;
+	}
+	.processes .process-row {
+		padding: 0 0 20px;
+	}
+	.processes .process-text {
+		background: #F5F5F5;
+		border: 0.5px solid #D3D3D3;
+		border-radius: 3px;
+		padding: 0 0 20px;
+		overflow: hidden;
+	}
+	.processes .process-text:before {
+		display: block;
+		height: 125px;
+		width: 100%;
+		background: #616161;
+		background-size: cover !important;
+		background-position: center center !important;
+		margin: 0;
+		padding: 0;
+		content: '';
+	}
+	.processes .process-text.planning-process:before{
+		background: url('../img/bg/planning.jpg');
+	}
+	.processes .process-text.development-process:before{
+		background: url('../img/bg/development.jpg');
+	}
+	.processes .process-text.deployment-process:before{
+		background: url('../img/bg/deployment.jpg');
+	}
+	.processes .process-text h3 {
+		font-size: 2em;
+		font-family: 'Montserrat', sans-serif;
+		margin: 0 0 10px;
+		text-align: left !important;
+		padding: 10px 10px 0
+	}
+	.processes .process-text p {
+		font-size: 1.1em;
+		line-height: 1.5em;
+		text-align: left !important;
+		margin: 0;
+		padding: 10px 10px 0
+	}
+	.processes .process-image {
+		display: none;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 }
 
@@ -678,10 +759,45 @@ footer img.footer-logo {
 		font-size: 1.2em;
 	}
 	/*end mobile menu*/
+
+	/*SECTIONS*/
+	/*section1*/
+	#section1 {
+		padding: 150px 0 100px;
+		position: relative;
+	}
+	#section1 h3.tagline {
+		margin: 0;
+		color: #52489C;
+		font-size: 2.8em;
+		font-family: 'Montserrat', sans-serif
+	}
+	#section1 p {
+		margin: 0 0 20px;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		text-align: right;
+	}
+
+	/*processes*/
+	.processes .process-text h3 {
+		font-size: 2em;
+		font-family: 'Montserrat', sans-serif;
+		margin: 20px 0 10px;
+	}
+	.processes .process-text p {
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
 }
 
 /* Large and up */
-@media screen and (min-width: 64em) {}
-
+@media screen and (min-width: 64em) {
+	header {
+		min-height: 850px !important;
+	}
+}
+	
 /* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+}
