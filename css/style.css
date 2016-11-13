@@ -352,7 +352,7 @@ header p.headerdescription {
 #header-line {
 	/*background: #F000FF;*/
 	bottom: 0;
-	height: 100px;
+	height: 50px;
 }
 #header-line .box1 {
 	border-right: 1px dashed #FFFFFF;
@@ -382,17 +382,6 @@ header p.headerdescription {
 	padding: 150px 0;
 	position: relative;
 }
-#section1 h2.banner {
-	color: #F45B69;
-	font-size: 4.5em;
-	font-family: 'Permanent Marker', sans-serif;
-	position: absolute;
-	top: -50px;
-	
-	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-	display: block;
-	margin: 0 auto;
-}
 #section1 h3.tagline {
 	margin: 0;
 	color: #F45B69;
@@ -403,7 +392,7 @@ header p.headerdescription {
 	margin: 0 0 20px;
 	font-size: 2em;
 	line-height: 1.5em;
-	/*letter-spacing: 0.05em;*/
+	text-align: right;
 }
 
 
@@ -613,6 +602,21 @@ footer img.footer-logo {
 		font-size: 1.2em;
 	}
 	/*end mobile menu*/
+
+	/*SECTIONS*/
+	/*section1*/
+	#section1 h3.tagline {
+		margin: 0 0 20px;
+		color: #F45B69;
+		font-size: 3em;
+		font-family: 'Montserrat', sans-serif
+	}
+	#section1 p {
+		margin: 0 0 20px;
+		font-size: 1.3em;
+		line-height: 1.5em;
+		text-align: left;
+	}
 }
 
 /* Medium only */
