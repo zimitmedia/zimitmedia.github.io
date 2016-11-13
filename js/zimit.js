@@ -16,6 +16,22 @@ $(document).ready(function(e){
 	// Fixed Navbar Scripts
 	$(window).scroll(navbarTransition);
 
+	//Mobile Menu Toggle
+	$('header .menu-icon').click(function(){
+		if ($('header .menu-list-mobile').hasClass('activated')) {
+			$('header .menu-list-mobile').removeClass('activated');
+			$('header .menu-icon .material-icons').text('menu');
+			$('nav#header-nav').removeClass('menu-activated');
+			$('nav#header-nav img.nav-logo-hide').removeClass('nav-logo-show-mobile');
+		} else {
+			$('header .menu-list-mobile').addClass('activated');
+			$('header .menu-icon .material-icons').text('close');
+			$('nav#header-nav').addClass('menu-activated');
+			$('nav#header-nav img.nav-logo-hide').addClass('nav-logo-show-mobile');
+		}
+	});
+
+
 	// SmoothScrolling to Anchors
 	smoothScroll.init({
 		speed: 1000,
@@ -33,3 +49,4 @@ $(document).ready(function(e){
 	});
 
 });
+
