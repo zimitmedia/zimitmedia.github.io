@@ -56,20 +56,9 @@ $(document).ready(function(e){
 
 	//Smooth Scrolling to Anchors
 	var navbar_offset = getNavbarOffset();
-	// console.log(navbar_offset);
-	// console.log($(window).width());
 	$(window).resize(function(){
-		// console.log(navbar_offset);
 		navbar_offset = getNavbarOffset();
 	})
-
-
-	// SmoothScrolling to Anchors
-	// smoothScroll.init({
-	// 	speed: 1000,
-	// 	easing: 'easeInOutCubic',
-	// 	offset: navbar_offset
-	// });
 
 	// Typed.js animations for the splash section
 	$('header #typed').typed({
