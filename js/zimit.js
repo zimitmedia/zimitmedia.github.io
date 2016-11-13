@@ -12,6 +12,22 @@ function navbarTransition() {
 	}
 }
 
+function getNavbarOffset() {
+	var offset;
+	if ($(window).width() >= 1025) {
+		offset = 79;
+	} else {
+		offset = 56
+	}
+	// SmoothScrolling to Anchors
+	smoothScroll.init({
+		speed: 1000,
+		easing: 'easeInOutCubic',
+		offset: offset
+	});
+	return offset;
+}
+
 $(document).ready(function(e){
 	// Fixed Navbar Scripts
 	$(window).scroll(navbarTransition);
@@ -38,13 +54,22 @@ $(document).ready(function(e){
 		$('nav#header-nav img.nav-logo-hide').removeClass('nav-logo-show-mobile');
 	});
 
+	//Smooth Scrolling to Anchors
+	var navbar_offset = getNavbarOffset();
+	// console.log(navbar_offset);
+	// console.log($(window).width());
+	$(window).resize(function(){
+		// console.log(navbar_offset);
+		navbar_offset = getNavbarOffset();
+	})
+
 
 	// SmoothScrolling to Anchors
-	smoothScroll.init({
-		speed: 1000,
-		easing: 'easeInOutCubic',
-		offset: 79
-	});
+	// smoothScroll.init({
+	// 	speed: 1000,
+	// 	easing: 'easeInOutCubic',
+	// 	offset: navbar_offset
+	// });
 
 	// Typed.js animations for the splash section
 	$('header #typed').typed({
