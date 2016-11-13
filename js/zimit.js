@@ -30,6 +30,7 @@ function getNavbarOffset() {
 
 $(document).ready(function(e){
 	// Fixed Navbar Scripts
+	navbarTransition();
 	$(window).scroll(navbarTransition);
 
 	//Mobile Menu Toggle
