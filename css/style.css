@@ -340,10 +340,19 @@ header p.headerdescription {
     transform: translate(-50%, 0);
     width: 60px;
 }
+.line-container .box1 {
+	float: left;
+}
+.line-container .box2 {
+	float: right;
+}
 .line-container .box1,
 .line-container .box2 {
 	width: 50%;
 	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .line-container .box1:after,
 .line-container .box2:after {
@@ -367,23 +376,33 @@ header p.headerdescription {
 }
 #section1-line2 {
 	bottom: 0;
-	height: 10px;
+	height: 80px;
 	border-top: 2px solid #9E9E9E;
 }
 #section1-line2 .box1 {
 	border-right: 1px dashed #9E9E9E;
+}
+#processes-line {
+	border-bottom: 2px solid #9E9E9E;
+	height: 100%;
+}
+#processes-line .box1 {
+	border-right: 1px dashed #9E9E9E;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*SECTIONS*/
 
 /*section1*/
 #section1 {
-	padding: 150px 0 50px;
+	padding: 150px 0 100px;
 	position: relative;
 }
 #section1 h3.tagline {
 	margin: 0;
-	color: #F45B69;
+	color: #52489C;
 	font-size: 4em;
 	font-family: 'Montserrat', sans-serif
 }
@@ -391,6 +410,44 @@ header p.headerdescription {
 	margin: 0 0 20px;
 	font-size: 2em;
 	line-height: 1.5em;
+	text-align: right;
+}
+
+/*processes*/
+.processes {
+	padding: 0 0 100px !important;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.processes .process-row {
+	padding: 40px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.processes .process-text h3 {
+	font-size: 2.8em;
+	font-family: 'Montserrat', sans-serif;
+	margin: 20px 0 10px;
+}
+.processes .process-text p {
+	font-size: 1.8em;
+	line-height: 1.5em;
+}
+.processes .process-image {
+	padding: 0 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.processes .process-image img {
+	width: 100%;
+	display: block;
+}
+.processes .process-text.planning-process,
+.processes .process-text.deployment-process {
 	text-align: right;
 }
 
@@ -405,45 +462,6 @@ header p.headerdescription {
 	width: 150px;
 	border-radius: 100%;
 	background: #AAE1E8;
-}
-
-
-/*processes*/
-.processes {
-	padding: 0 !important;
-}
-.processes .process-box {
-	filter: grayscale(1);
-	-webkit-filter: grayscale(1);
-	height: 100em;
-	max-height: 600px;
-	background-size: cover !important;
-	background-position: center center !important;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
-.processes .process-box:hover {
-	filter: grayscale(0);
-	-webkit-filter: grayscale(0);
-}
-.processes .columns {
-	padding: 0 !important;
-}
-.processes .darken {
-	height: 100%;
-	background: rgba(0,0,0,0.5);
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	
-}
-.processes .darken:hover {
-	background: rgba(0,0,0,0);
 }
 
 /*Contact Us*/
