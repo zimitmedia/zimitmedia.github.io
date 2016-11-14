@@ -70,5 +70,10 @@ $(document).ready(function(e){
 		backSpeed: 10
 	});
 
+	// Popup button actions 
+	$('.popupmodal a').on('click',function(){
+		$('.popupmodal').addClass('popupclosed');
+	});
+	
 });
 
