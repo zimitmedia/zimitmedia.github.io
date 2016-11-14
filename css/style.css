@@ -387,10 +387,20 @@ header p.headerdescription {
 }
 #processes-line {
 	height: 100%;
-	border-bottom: 2px solid #9E9E9E;
 }
 #processes-line .box1 {
 	border-right: 1px dashed #9E9E9E;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#services-line {
+	height: 50px;
+	top: 0;
+	border-bottom: 2px solid #FFFFFF;
+}
+#services-line .box1 {
+	border-right: 1px dashed #FFFFFF;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -461,6 +471,34 @@ header p.headerdescription {
 	color: white;
 }
 
+/*Services*/
+.services {
+	background: url('../img/servicesbg.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	color: #FFFFFF;
+	position: relative;
+	padding-bottom: 100px;
+}
+.services h2 {
+	text-align: center;
+	font-size: 3em;
+}
+.services .services-items {
+	text-align: center;
+	color: #FFFFFF;
+}
+.services .services-items img {
+	width: 50%;
+	max-width: 220px;
+}
+.services .services-items h3 {
+	font-size: 1.5em;
+}
+.services .services-items p {
+	color: #FFFFFF;
+}
 
 /*team-profile*/
 .team-profile {
