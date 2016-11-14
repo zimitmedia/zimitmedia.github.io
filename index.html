@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/foundation.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
@@ -91,14 +92,14 @@
 		</div>
 
 		<div class="wrapper">
-			<div class="row">
+			<div class="row animatedParent animateOnce" data-appear-top-offset='-200'>
 				<div class="medium-6 medium-push-6 small-12 columns">
-					<h3 class="tagline">
+					<h3 class="tagline animated fadeInUpShort">
 						Great Results<br/>Meets<br/>Affordability
 					</h3>
 				</div>
 				<div class="medium-6 medium-pull-6 small-12 columns">
-					<p>
+					<p class="animated fadeInDownShort">
 						Everything in this era is going digital. Zimit Media is here to <b>help your organization transition from zero to hero, from planning to deployment</b> without the need for a big purse.
 					</p>
 				</div>
@@ -133,7 +134,7 @@
 			</div>
 			<div class="row process-row">
 				<div class="medium-6 small-12 columns process-image development-process">
-					<img src="img/bg/development.jpg" alt="Planning">
+					<img src="img/bg/development.jpg" alt="Development">
 				</div>
 				<div class="medium-6 small-12 columns process-text development-process">
 					<h3 class="main-sea-text">Development and Testing</h3>
@@ -146,10 +147,14 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium labore neque nostrum, repellendus molestias ipsum libero magni assumenda deleniti doloremque similique quae ad!</p>
 				</div>
 				<div class="medium-6 small-12 columns process-image deployment-process">
-					<img src="img/bg/deployment.jpg" alt="Planning">
+					<img src="img/bg/deployment.jpg" alt="Deployment">
 				</div>
 			</div>
 		</div>
+	</section>
+
+	<section class="front-page-section slider">
+		<h1 class="center-align">Coming Soon</h1>
 	</section>
 
 	<section class="front-page-section main-grey">
@@ -229,7 +234,7 @@
 	<script src="js/jquery.smooth-scroll.min.js"></script>
 	<script src="js/smooth-scroll.js"></script>
 	<script src="js/typed.js"></script>
-	<script src="js/stellar.min.js"></script>
+	<script src="js/css3-animate-it.js"></script>
 	
 	<!-- INIT -->
 	<script src="js/zimit.js"></script>
