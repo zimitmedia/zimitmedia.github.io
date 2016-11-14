@@ -746,7 +746,7 @@ footer img.footer-logo {
 		border: 0.5px solid #D3D3D3;
 		border-radius: 6px;
 		box-shadow: 0 3px 0.5px 0 rgba(0,0,0,0.2);
-		padding: 0 0 20px;
+		padding: 0 0 40px;
 		overflow: hidden;
 	}
 	.processes .process-text:before {
@@ -781,9 +781,9 @@ footer img.footer-logo {
 	.processes .process-text h3 {
 		font-size: 2em;
 		font-family: 'Montserrat', sans-serif;
-		margin: 0 0 10px;
+		margin: 10px 0 10px;
 		text-align: left !important;
-		padding: 10px 10px 0;
+		padding: 10px 15px 0;
 		color: #FFF;
 	}
 	.processes .process-text p {
@@ -791,7 +791,7 @@ footer img.footer-logo {
 		line-height: 1.5em;
 		text-align: left !important;
 		margin: 0;
-		padding: 10px 10px 0;
+		padding: 10px 15px 0;
 		color: #FFF;
 	}
 	.processes .process-image {
