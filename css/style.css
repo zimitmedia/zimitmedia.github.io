@@ -446,6 +446,7 @@ header p.headerdescription {
 }
 .processes .process-image img {
 	width: 100%;
+	max-width: 450px;
 	display: block;
 }
 .processes .process-text.planning-process,
