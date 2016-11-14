@@ -744,7 +744,8 @@ footer img.footer-logo {
 	.processes .process-text {
 		background: #F5F5F5;
 		border: 0.5px solid #D3D3D3;
-		border-radius: 3px;
+		border-radius: 6px;
+		box-shadow: 0 3px 0.5px 0 rgba(0,0,0,0.2);
 		padding: 0 0 20px;
 		overflow: hidden;
 	}
@@ -768,19 +769,30 @@ footer img.footer-logo {
 	.processes .process-text.deployment-process:before{
 		background: url('../img/bg/deployment.jpg');
 	}
+	.processes .process-text.planning-process {
+		background: #C14853;
+	}
+	.processes .process-text.development-process {
+		background: #449393;
+	}
+	.processes .process-text.deployment-process {
+		background: #4F4880;
+	}
 	.processes .process-text h3 {
 		font-size: 2em;
 		font-family: 'Montserrat', sans-serif;
 		margin: 0 0 10px;
 		text-align: left !important;
-		padding: 10px 10px 0
+		padding: 10px 10px 0;
+		color: #FFF;
 	}
 	.processes .process-text p {
 		font-size: 1.1em;
 		line-height: 1.5em;
 		text-align: left !important;
 		margin: 0;
-		padding: 10px 10px 0
+		padding: 10px 10px 0;
+		color: #FFF;
 	}
 	.processes .process-image {
 		display: none;
