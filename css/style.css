@@ -473,6 +473,21 @@ header p.headerdescription {
 	border-radius: 100%;
 	background: #AAE1E8;
 }
+.team-profile h2 {
+	font-size: 3.5em;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 0;
+}
+.team-profile h3 {
+	font-size: 1.6em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.team-profile p {
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
 
 /*Contact Us*/
 #contactus {
@@ -772,6 +787,18 @@ footer img.footer-logo {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+	}
+
+	/*Team Profile*/
+	.team-profile h2 {
+		font-size: 2.7em;
+	}
+	.team-profile h3 {
+		font-size: 1.3em;
+	}
+	.team-profile p {
+		font-size: 1em;
+		margin-bottom: 30px;
 	}
 
 	/*POPUP*/
