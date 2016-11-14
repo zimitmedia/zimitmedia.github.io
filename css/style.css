@@ -64,7 +64,7 @@ img.scroll-indicate-mid {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 20px;
+	bottom: 32px;
 	margin: 0 auto;
 	height: 60px;
 }
@@ -308,11 +308,14 @@ header nav#header-nav ul.menu-list li a:link,
 header nav#header-nav ul.menu-list li a:visited {
 	color: #FFF;
 	text-decoration: none;
-	padding: 5px 15px;
-	margin: 0;
+	padding: 5px 0;
+	margin: 0 15px;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: .1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 header h1.headerphrase {
@@ -338,7 +341,7 @@ header p.headerdescription {
 	position: absolute;
 	left: 50%;
     transform: translate(-50%, 0);
-    width: 60px;
+    width: 40px;
 }
 .line-container .box1 {
 	float: left;
@@ -361,7 +364,7 @@ header p.headerdescription {
 #header-line {
 	/*background: #F000FF;*/
 	bottom: 0;
-	height: 50px;
+	height: 40px;
 }
 #header-line .box1 {
 	border-right: 1px dashed #FFFFFF;
