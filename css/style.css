@@ -387,6 +387,7 @@ header p.headerdescription {
 }
 #processes-line {
 	height: 100%;
+	border-bottom: 2px solid #9E9E9E;
 }
 #processes-line .box1 {
 	border-right: 1px dashed #9E9E9E;
