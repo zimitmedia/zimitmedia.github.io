@@ -503,6 +503,8 @@ header p.headerdescription {
 }
 .services .services-item p {
 	color: #FFFFFF;
+	line-height: 1.3em;
+	font-size: 1.1em
 }
 
 /*team-profile*/
@@ -532,8 +534,8 @@ header p.headerdescription {
 	margin-bottom: 10px;
 }
 .team-profile p {
-	font-size: 1.2em;
-	line-height: 1.3em;
+	font-size: 1.1em;
+	line-height: 1.5em;
 }
 
 /*Contact Us*/
