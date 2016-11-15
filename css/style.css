@@ -189,6 +189,9 @@ a:hover {
 .main-grey-text {
 	color: #EBEBEB;
 }
+.main-white-text {
+	color: #FFFFFF;
+}
 
 /*BUTTONS*/
 
@@ -510,6 +513,10 @@ header p.headerdescription {
 /*team-profile*/
 .team-profile {
 	text-align: center;
+	padding: 80px 0 100px;
+	background: url('../img/skybg.jpg');
+	background-size: cover;
+	background-position: center center;
 }
 .team-profile .porthole {
 	margin: 0 auto;
@@ -526,16 +533,19 @@ header p.headerdescription {
 .team-profile h2 {
 	font-size: 3em;
 	margin-top: 0;
+	color: #393939;
 }
 .team-profile h3 {
 	font-size: 1.6em;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	margin-bottom: 10px;
+	color: #393939;
 }
 .team-profile p {
 	font-size: 1.1em;
 	line-height: 1.5em;
+	color: #393939;
 }
 
 /*Contact Us*/
