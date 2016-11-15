@@ -479,24 +479,29 @@ header p.headerdescription {
 	background-position: center center;
 	color: #FFFFFF;
 	position: relative;
-	padding-bottom: 100px;
+	padding-bottom: 130px;
 }
 .services h2 {
 	text-align: center;
 	font-size: 3em;
+	margin-bottom: 80px;
+	padding: 0 40px;
 }
 .services .services-items {
 	text-align: center;
 	color: #FFFFFF;
 }
-.services .services-items img {
+.services .services-item {
+	padding-bottom: 30px;
+}
+.services .services-item img {
 	width: 50%;
 	max-width: 220px;
 }
-.services .services-items h3 {
+.services .services-item h3 {
 	font-size: 1.5em;
 }
-.services .services-items p {
+.services .services-item p {
 	color: #FFFFFF;
 }
 
@@ -837,6 +842,32 @@ footer img.footer-logo {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+	}
+
+	/*Services*/
+	.services {
+		padding-bottom: 80px;
+	}
+	.services h2 {
+		text-align: center;
+		font-size: 2.4em;
+		margin-bottom: 40px;
+		margin-top: 0;
+		padding: 0;
+	}
+	.services .services-item {
+		padding-bottom: 5px;
+	}
+	.services .services-item img {
+		width: 75%;
+		max-width: 220px;
+	}
+	.services .services-item h3 {
+		font-size: 1.3em;
+		margin-top: 10px;
+	}
+	.services .services-item p {
+		color: #FFFFFF;
 	}
 
 	/*Team Profile*/
