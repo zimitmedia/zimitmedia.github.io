@@ -28,6 +28,11 @@ function getNavbarOffset() {
 	return offset;
 }
 
+function alertComingSoon() {
+	alert("The page you are trying to access is currently under development but it's coming soon!");
+	return true;
+}
+
 $(document).ready(function(e){
 	// Fixed Navbar Scripts
 	navbarTransition();
@@ -71,9 +76,13 @@ $(document).ready(function(e){
 	});
 
 	// Popup button actions 
-	$('.popupmodal a').on('click',function(){
+	$('.popupmodal a').on('click', function(){
 		$('.popupmodal').addClass('popupclosed');
 	});
 	
+	// Coming soon action
+	$('a.coming-soon').on('click', function(){
+		alertComingSoon();
+	});
 });
 
