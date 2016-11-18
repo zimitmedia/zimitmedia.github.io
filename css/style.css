@@ -213,8 +213,8 @@ a.big-btn {
 /* HEADER CSS */
 header {
 	background: url('../img/headerbg.jpg');
-	/*background-repeat: no-repeat;*/
-	/*background-position: center center;*/
+	background-repeat: no-repeat;
+	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
@@ -479,7 +479,7 @@ header p.headerdescription {
 	background: url('../img/servicesbg.jpg');
 	background-attachment: fixed;
 	background-size: cover;
-	/*background-position: center center;*/
+	background-position: center center;
 	color: #FFFFFF;
 	position: relative;
 	padding-bottom: 130px;
