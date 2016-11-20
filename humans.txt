@@ -1,0 +1,12 @@
+Copyright 2016 Zimit Media Team
+
+We are ZIMIT!
+
+Angel Angeles III - Front End
+Almer Almazan - Back End
+Jenary Madia - Back End
+
+Used plugins: 
+Typed.js
+smoot-scroll.js
+css3-animate-it.js
