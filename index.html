@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html lang="en-PH">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,7 +50,10 @@
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+
 <body>
+
+<span itemscope itemtype="http://schema.org/LocalBusiness">
 	<header style="position: relative;" class="site-header">
 		<div class="container">
 			<!-- NAV -->
@@ -57,7 +61,7 @@
 				<div class="large-4 columns">
 					<a href="/">
 						<img src="img/logo/banner1_white.png" alt="Zimit Media" class="nav-logo">
-						<img src="img/logo/banner1.png" alt="Zimit Media" class="nav-logo nav-logo-hide">
+						<img itemprop="image" src="img/logo/banner1.png" alt="Zimit Media" class="nav-logo nav-logo-hide">
 					</a>
 				</div>
 				<div class="large-8 columns right-align">
@@ -323,7 +327,9 @@
 					</p>
 					<p>
 						Email:<br/>
-						<a href="mailto:contact@zimitmedia.zendesk.com">contact@zimitmedia.zendesk.com</a>
+						<a href="mailto:contact@zimitmedia.zendesk.com">
+						<span itemprop="email">contact@zimitmedia.zendesk.com</span>
+						</a>
 					</p>
 					<p>
 						Facebook:<br/>
@@ -333,7 +339,12 @@
 			</div>
 		</div>
 	</section>
-
+	<meta itemprop="name" content="Zimit Media">
+	<meta itemprop="telephone" content="(+632)625-7928">
+	<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+	<meta itemprop="addressCountry" content="Philippines">
+	</span>
+</span>
 
 	
 
