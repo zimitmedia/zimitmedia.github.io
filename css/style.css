@@ -43,8 +43,12 @@ html {
 	position: relative;
 }
 
-.break-word {
+/*.break-word {
 	word-break: break-all;
+}*/
+
+* {
+	word-wrap: break-word;
 }
 
 .front-page-section {
