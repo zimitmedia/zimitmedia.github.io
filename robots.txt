@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: 
+Disallow: /css/
+Disallow: /icon/
+Disallow: /js/
+Disallow: /manifest.json
+Disallow: /readme.md

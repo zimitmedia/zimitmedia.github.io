@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html lang="en-PH">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" description="Zimit Media Team">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Zimit Media Team">
+	<meta name="description" content="We are a Manila-based web development team who are obsessed at creating aesthetically pleasing designs that produces stunning results.">
+	
 
 	<!-- FAVICON AND THEME -->
 	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
@@ -36,6 +39,12 @@
 
 	</script>
 
+	<!-- FB Open Graph -->
+	<meta property="og:url" content="http://zimitmedia.com">
+	<meta property="og:title" content="Zimit Media Philippines - Great Results Meet Affordability">
+	<meta property="og:description" content="We are a Manila-based web development team who are obsessed at creating aesthetically pleasing designs that produces stunning results.">
+	<meta property="og:image" content="http://zimitmedia.com/img/facebook_og.png">
+
 	<title>Zimit Media Philippines</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/foundation.css">
@@ -43,7 +52,10 @@
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+
 <body>
+
+<div itemscope itemtype="http://schema.org/LocalBusiness">
 	<header style="position: relative;" class="site-header">
 		<div class="container">
 			<!-- NAV -->
@@ -51,7 +63,7 @@
 				<div class="large-4 columns">
 					<a href="/">
 						<img src="img/logo/banner1_white.png" alt="Zimit Media" class="nav-logo">
-						<img src="img/logo/banner1.png" alt="Zimit Media" class="nav-logo nav-logo-hide">
+						<img itemprop="image" src="img/logo/banner1.png" alt="Zimit Media" class="nav-logo nav-logo-hide">
 					</a>
 				</div>
 				<div class="large-8 columns right-align">
@@ -74,11 +86,11 @@
 			
 			<!-- Catchphrase -->
 			<h1 class="headerphrase">Design<br/><span id="x-sign" style="line-height: 0.5em; color: #ffc600;">&#215;</span><br/><span id="typed"></span>
-			<div id="typed-strings" style="visibility: hidden;">
+			<span id="typed-strings" style="visibility: hidden;">
 				<p>Performance</p>
 				<p>Efficiency</p>
 				<p>Results</p>
-			</div>
+			</span>
 			</h1>
 			<div class="row">
 				<div class="large-8 end columns">
@@ -309,20 +321,32 @@
 				<div class="large-6 medium-5 small-12 columns contact-form">
 					<p>
 						Telephone: (Look for <b>Angel</b>)<br/>
-						<span class="large">(02)625-7928</span>
+						<span class="large">(+632)625-7928</span>
 					</p>
 					<p>
 						Mobile:<br/>
 						<span class="large">(+63)917-736-1997</span>
 					</p>
 					<p>
-						<a href="mailto:contact@zimitmedia.zendesk.com">contact@zimitmedia.zendesk.com</a>
+						Email:<br/>
+						<a href="mailto:contact@zimitmedia.zendesk.com">
+						<span itemprop="email">contact@zimitmedia.zendesk.com</span>
+						</a>
+					</p>
+					<p>
+						Facebook:<br/>
+						<a href="http://www.facebook.com/zimitmedia">fb.com/zimitmedia</a>
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
-
+	<meta itemprop="name" content="Zimit Media">
+	<meta itemprop="telephone" content="(+632)625-7928">
+	<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+	<meta itemprop="addressCountry" content="Philippines">
+	</span>
+</div>
 
 	
 

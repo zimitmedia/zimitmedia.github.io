@@ -14,6 +14,10 @@ html {
 	background: #F3F3F3;
 }
 
+* {
+	word-break: break-all;
+}
+
 .wrapper {
 	max-width: 1024px;
 	width: 100%;
@@ -208,6 +212,16 @@ a.big-btn {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	-webkit-transition: background-color 0.2s ease;
+	-moz-transition: background-color 0.2s ease;
+	-ms-transition: background-color 0.2s ease;
+	-o-transition: background-color 0.2s ease;
+	transition: background-color 0.2s ease;
+	
+}
+
+a:hover.big-btn.main-red {
+	background-color: #F67984;
 }
 
 /* HEADER CSS */
