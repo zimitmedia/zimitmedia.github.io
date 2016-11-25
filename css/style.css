@@ -15,7 +15,7 @@ html {
 }
 
 * {
-	word-break: break-all;
+	word-break: normal;
 }
 
 .wrapper {
