@@ -14,10 +14,6 @@ html {
 	background: #F3F3F3;
 }
 
-* {
-	word-break: normal;
-}
-
 .wrapper {
 	max-width: 1024px;
 	width: 100%;
@@ -45,6 +41,10 @@ html {
 	width: 100%;
 	padding: 0 20px;
 	position: relative;
+}
+
+.break-word {
+	word-break: break-all;
 }
 
 .front-page-section {
