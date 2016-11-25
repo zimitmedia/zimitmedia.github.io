@@ -14,6 +14,10 @@ html {
 	background: #F3F3F3;
 }
 
+* {
+	word-break: break-all;
+}
+
 .wrapper {
 	max-width: 1024px;
 	width: 100%;
